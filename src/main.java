@@ -22,8 +22,8 @@ public class main {
 			System.out.println("Insira a margem de lucro: ");
 			int margem = reader.read();
 			String line = "";
-			while(line != null) {
-				//código
+			while(line != null && !line.isEmpty()) {
+				//cï¿½digo
 				System.out.print("Insira o codigo do produto: ");			
 				int codigo = reader.read();
 				
@@ -31,8 +31,8 @@ public class main {
 				System.out.println("Insira o nome do produto: ");
 				String name = reader.readLine();
 				
-				//preço
-				System.out.println("Insira o preço do produto: ");
+				//preï¿½o
+				System.out.println("Insira o preï¿½o do produto: ");
 				int pre = reader.read();
 				double preco = lucroDoProduto(margem, pre);
 				
@@ -64,6 +64,6 @@ public class main {
 }
 
 // [x] Criar saida de arquivo csv
-// [x] Código - nome - preço - categoria 
+// [x] Cï¿½digo - nome - preï¿½o - categoria 
 // [x] Solicitar margem de lucro sobre produto
-// [ ] Saida deve ser codigo - estoque - nome - preço - categoria
+// [ ] Saida deve ser codigo - estoque - nome - preï¿½o - categoria
